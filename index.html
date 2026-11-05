@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink | Blood Donation Camp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        
+<nav class="navbar">
+
+    <h2 class="logo">LifeLink</h2>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#progress">Camp Progress</a></li>
+        <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#venues">Camp Locations</a></li>
+        <li><a href="#appointment">Book a Slot</a></li>
+        <li><a href="#blood-guide">Blood Groups</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#register">Register</a></li>
+    </ul>
+
+    <a href="#register" class="nav-button">Become a Donor</a>
+
+</nav>
+
+    </header>
+
+    <!-- Main Homepage -->
+    <main>
+
+       
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="tagline">
+            A LITTLE FROM YOU. A LIFETIME FOR THEM.
+        </p>
+
+        <h1>
+            Be Someone's<br>
+            Reason to Live.
+        </h1>
+
+        <p class="hero-description">
+            Your one donation can make a meaningful difference
+            in someone's life. Join our community of lifesavers.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#register" class="primary-button">
+                Become a Donor →
+            </a>
+
+            <a href="#about" class="secondary-button">
+                Discover More
+            </a>
+
+        </div>
+
+        <p class="hero-note">
+            ♥ Every Drop Counts. Every Donor Matters.
+        </p>
+
+    </div>
+
+    <div class="hero-visual">
+
+        <div class="glow-circle"></div>
+
+        <div class="blood-drop">
+            ♥
+        </div>
+
+        <h3>Be a Lifesaver</h3>
+        <p>One donation can help save lives.</p>
+
+    </div>
+
+</section>
+
+<!-- Statistics Dashboard -->
+<section class="stats-section">
+
+    <div class="stat-card">
+        <div class="stat-icon">🩸</div>
+        <h2>32+</h2>
+        <p>Units Collected</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">🏕️</div>
+        <h2>3</h2>
+        <p>Camps Organised</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">📅</div>
+        <h2>12</h2>
+        <p>Appointments Booked</p>
+    </div>
+
+</section>
+
+            
+<!-- About Section -->
+<section id="about" class="about">
+
+    <p class="section-tag">WHY LIFE LINK?</p>
+
+    <h2>Every Drop Has a Purpose</h2>
+
+    <p class="about-description">
+        A small act of kindness can bring hope to someone
+        who needs it. Your decision to donate can make a difference.
+    </p>
+
+    <div class="about-cards">
+
+        <div class="about-card">
+            <div class="about-icon">❤️</div>
+            <h3>Save Lives</h3>
+            <p>
+                Your blood donation can help patients
+                who need blood during treatment or emergencies.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div class="about-icon">🤝</div>
+            <h3>Spread Hope</h3>
+            <p>
+                Your kindness gives patients and their
+                families hope during difficult times.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div class="about-icon">🌍</div>
+            <h3>Build Community</h3>
+            <p>
+                Join a community of donors working
+                together to support people in need.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+            
+<!-- Camp Progress Section -->
+<section id="progress" class="progress-section">
+
+    <p class="section-tag">OUR IMPACT</p>
+
+    <h2>Together, We Make a Difference</h2>
+
+    <p class="progress-description">
+        Every donation brings us one step closer to our collection goal.
+    </p>
+
+    <div class="progress-details">
+
+        <div>
+            <h3 id="progressText">32 out of 50 units collected</h3>
+            <p>Blood units collected</p>
+        </div>
+
+        <div class="goal-label">
+            <h3>50 Units</h3>
+            <p>Collection target</p>
+        </div>
+
+    </div>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p class="progress-message">
+        Every contribution counts. Be part of the change!
+    </p>
+
+</section>
+
+<!-- Eligibility Section -->
+<section id="eligibility" class="eligibility">
+
+    <p class="section-tag">CHECK BEFORE YOU DONATE</p>
+
+    <h2>Are You Ready to Donate?</h2>
+
+    <p class="eligibility-description">
+        Answer these basic questions to check your preliminary eligibility.
+    </p>
+
+    <form id="eligibilityForm">
+
+        <label for="donorAge">Are you between 18 and 65 years old?</label>
+        <select id="donorAge" required>
+            <option value="">Select an answer</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="donorWeight">Do you weigh at least 50 kg?</label>
+        <select id="donorWeight" required>
+            <option value="">Select an answer</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="donorHealth">Are you feeling healthy today?</label>
+        <select id="donorHealth" required>
+            <option value="">Select an answer</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="donorTattoo">Do you have any tattoo?</label>
+        <select id="donorTattoo" required>
+            <option value="">Select an answer</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Check My Eligibility</button>
+
+        <p id="eligibilityResult"></p>
+
+    </form>
+
+    <p class="eligibility-note">
+        This is only a preliminary check, not medical approval.
+        Final eligibility is decided by qualified medical personnel.
+    </p>
+
+</section>
+
+<!-- Camp and Venue Selection -->
+
+<section class="venues" id="venues">
+
+    <p class="section-tag">FIND A CAMP</p>
+
+    <h2>Choose Your Donation Venue</h2>
+
+    <p class="section-description">
+        Select a convenient location for your blood donation.
+    </p>
+
+    
+<div class="venue-cards">
+
+    <div class="venue-card">
+        <h3>UniPolis</h3>
+        <p>Lovely Professional University</p>
+    </div>
+
+    <div class="venue-card">
+        <h3>University Health Centre</h3>
+        <p>Lovely Professional University</p>
+    </div>
+
+    <div class="venue-card">
+        <h3>University Sports Complex</h3>
+        <p>Lovely Professional University</p>
+    </div>
+
+</div>
+
+    <label for="venueSelect">Select Your Preferred Venue</label>
+
+    <select id="venueSelect">
+    <option value="">Choose a venue</option>
+    <option value="UniPolis">UniPolis</option>
+    <option value="University Health Centre">University Health Centre</option>
+    <option value="University Sports Complex">University Sports Complex</option>
+</select>
+
+    <p id="venueMessage"></p>
+
+</section>
+
+<!-- Appointment Booking -->
+
+<section class="appointment" id="appointment">
+
+    <p class="section-tag">BOOK YOUR SLOT</p>
+
+    <h2>Schedule Your Donation</h2>
+
+    <p class="section-description">
+        Choose a convenient date and time for your donation.
+    </p>
+
+    <form id="appointmentForm">
+
+        <label for="appointmentDate">Select Date</label>
+        <input type="date" id="appointmentDate" required>
+
+        <label for="appointmentTime">Select Time Slot</label>
+
+        <select id="appointmentTime" required>
+            <option value="">Choose a time slot</option>
+            <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+            <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+            <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+            <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+
+        <p id="appointmentMessage"></p>
+
+    </form>
+
+</section>
+
+<!-- Blood Group Guide -->
+
+<section class="blood-guide" id="blood-guide">
+
+    <p class="section-tag">KNOW YOUR BLOOD GROUP</p>
+
+    <h2>Every Blood Group Matters</h2>
+
+    <p class="section-description">
+        Learn about the eight main blood groups and their importance.
+    </p>
+
+    <div class="blood-cards">
+
+        <div class="blood-card"><h3>A+</h3></div>
+        <div class="blood-card"><h3>A-</h3></div>
+        <div class="blood-card"><h3>B+</h3></div>
+        <div class="blood-card"><h3>B-</h3></div>
+        <div class="blood-card"><h3>AB+</h3></div>
+        <div class="blood-card"><h3>AB-</h3></div>
+        <div class="blood-card"><h3>O+</h3></div>
+        <div class="blood-card"><h3>O-</h3></div>
+
+    </div>
+
+<div class="compatibility">
+
+    <h3>Who Can Receive Your Blood?</h3>
+
+    <p>Red blood cell donation compatibility guide:</p>
+
+    <div class="compatibility-list">
+
+        <p><strong>O-:</strong> O-, O+, A-, A+, B-, B+, AB-, AB+</p>
+
+        <p><strong>O+:</strong> O+, A+, B+, AB+</p>
+
+        <p><strong>A-:</strong> A-, A+, AB-, AB+</p>
+
+        <p><strong>A+:</strong> A+, AB+</p>
+
+        <p><strong>B-:</strong> B-, B+, AB-, AB+</p>
+
+        <p><strong>B+:</strong> B+, AB+</p>
+
+        <p><strong>AB-:</strong> AB-, AB+</p>
+
+        <p><strong>AB+:</strong> AB+</p>
+
+    </div>
+
+</div>
+
+    <p class="blood-guide-note">
+        Blood transfusion compatibility must always be checked by qualified medical professionals.
+    </p>
+
+</section>
+
+<!-- FAQ and Donation Guide -->
+
+<section class="faq" id="faq">
+
+    <p class="section-tag">HAVE QUESTIONS?</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="section-description">
+        Everything you need to know before donating blood.
+    </p>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <h3>1. Who can donate blood?</h3>
+            <p>People who meet the required age, weight and health criteria can donate after medical screening.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>2. How often can someone donate blood?</h3>
+            <p>The eligible donation interval depends on the type of donation and medical guidelines. Follow the advice of qualified medical personnel.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>3. How long does blood donation take?</h3>
+            <p>The actual blood collection usually takes around 8–10 minutes. The complete visit takes longer because of registration and screening.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>4. Does blood donation hurt?</h3>
+            <p>You may feel a brief prick when the needle is inserted. Most donors experience little discomfort.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>5. What should I do before and after donating?</h3>
+            <p>Eat a healthy meal, stay hydrated and follow the medical team's instructions. After donation, rest and have refreshments as advised.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Registration Section -->
+        <section id="register" class="registration">
+            <h2>Become a Donor</h2>
+
+            <form id="donorForm">
+
+                <input type="text" id="name"
+                    placeholder="Full Name" required>
+
+                <input type="number" id="age"
+                    placeholder="Age" required>
+
+                <input type="number" id="weight"
+                    placeholder="Weight (kg)"
+                    min="45"
+                    max="300"
+                    step="0.1"
+                    required>
+
+                <select id="bloodGroup" required>
+                    <option value="">Select Blood Group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+
+                <input type="tel" id="contact"
+                    placeholder="Contact Number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    inputmode="numeric"
+                    required>
+
+                <button type="submit">Register Now</button>
+
+                <p id="message"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>LifeLink<span>.</span></h2>
+            <p>A Little From You. A Lifetime For Them.</p>
+            <p>Connecting donors, spreading hope and saving lives.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#venues">Camp Locations</a>
+            <a href="#appointment">Book a Slot</a>
+            <a href="#faq">FAQs</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Our Mission</h3>
+            <p>Making blood donation awareness and camp access easier for everyone.</p>
+            <a href="#register">Become a Donor</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 LifeLink. All Rights Reserved.</p>
+        <p>Designed with care by Team Web Wizards.</p>
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
